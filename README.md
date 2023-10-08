@@ -15,7 +15,7 @@ Briefly describe the purpose and goals of your machine learning project. Explain
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Data Preprocessing](#data-preprocessing)
 - [Model Building](#model-building)
-- [Model Evaluation / Results and Insights](#model-evaluation)
+- [Model Evaluation / Results and Insights](#model-evaluation-results-and-insights)
 - [Future Work](#future-work)
 - [Contributions and License](#contributions-and-license)
 
@@ -34,6 +34,7 @@ List of the main libraries and packages used:
 
 ## Data
 Data source: https://www.kaggle.com/datasets/parisrohan/credit-score-classification
+
 #### DATA OVERVIEW
 * 'id': A unique identifier for each data record.
 * 'customer_id': An identifier for each customer, allowing you to associate multiple records with the same individual.
