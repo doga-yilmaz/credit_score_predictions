@@ -82,7 +82,7 @@ The data that I used has 100.000 rows and 27 features including target feature.
 * `GridSearchCV` has executed to find best model and it's paramaters.
   
 
-## Model Evaluation
+## Model Evaluation / Results and Insights
 * When F1 scorer used best model was RandomForestClassifier with {'max_depth': None, 'n_estimators': 128} 
 * F1 score was 0.8064 in `GridSearchCV` and 0.81 in the test set that was created in the beginning for evaluation.
 * Confusion matrix and classification report:
@@ -98,6 +98,6 @@ The data that I used has 100.000 rows and 27 features including target feature.
 * NLP can be impelemented instead of encoding to columns like payment_behavior and type_of_loan. With doing this we can have less columns
 
 ## Contributions and License
-State whether you're open to contributions or feedback from others. Specify the license for your project.
+I am open to contributions. This project was my first one so feedbacks are appreciated, I am looking for your feedbacks to imporove myself.
 
 This project is licensed under the MIT License.
