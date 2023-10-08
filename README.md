@@ -91,6 +91,7 @@ The data that I used has 100.000 rows and 27 features including target feature.
 
 
 ## Future Work
+
 * The dataset initially consisted of 27 columns, but as it grew to include more than 50 columns, the computational cost increased significantly. To address this challenge and improve computational efficiency, dimension reduction techniques like PCA, LLE, and t-SNE can be implemented, allowing us to reduce the dataset's dimensionality while preserving important information for analysis and modeling.
 * Additional machine learning algorithms and paramater settings can be explored with using `GridSearchCV`
 * Scaler implemented to only numeric columns, all columns can be transformed by same or different scalers.
