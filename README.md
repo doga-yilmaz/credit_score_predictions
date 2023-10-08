@@ -34,7 +34,7 @@ List of the main libraries and packages used:
 
 ## Data
 Data source: https://www.kaggle.com/datasets/parisrohan/credit-score-classification
-DATA OVERVIEW
+#### DATA OVERVIEW
 * 'id': A unique identifier for each data record.
 * 'customer_id': An identifier for each customer, allowing you to associate multiple records with the same individual.
 * 'month': The month of the data record, indicating when the data was collected or relevant.
