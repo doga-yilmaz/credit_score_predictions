@@ -69,51 +69,25 @@ DATA OVERVIEW
 The data that I used has 100.000 rows and 27 features including target feature. 
 
 ## Data Preprocessing
+#### How did I approach to preprocessing to each column is explained in the notebook more clearly.
+* There were very strange values almost all of the features.
+* I handled one by one all of the categorical features for the sake of modularity.
+* I handled numeric features in three steps; first I take care of all the float features then integer features, final step was to handle credit_history_age feature.
 
-### Categorical Features Handling Plan
-* month:
-int64 --> str
-This column will be encoded
-
-* occupation:
-_______ values will be deleted.
-Values will be imputed using the mode, which represents the most common value associated with each unique Customer_ID
-This column will be encoded.
-
-* type_of_loan:
-Get every specific loan type.
-Binary encoding. If a person has that specific loan type in the cell, it will be True otherwise False.
-Implement mode imputer to missing values
-
-* credit_mix:
-_ values will be deleted,
-Missing values will be imputed using the mode, which represents the most common value associated with each unique Customer_ID,
-This column will be encoded.
-
-* payment_of_min_amount:
-NM values will be deleted,
-Missing values will be imputed using the mode, which represents the most common value associated with each unique Customer_ID,
-This column will be encoded.
-
-* payment_behaviour:
-!@9#%8 values will be deleted,
-Missing values will be imputed using the mode, which represents the most common value associated with each unique Customer_ID,
-This column will be encoded.
-
-* credit_score:
-This column is the target. There are three values; Standard, Poor, Good. They will be replaced as Poor --> 0, Good --> 1, Standard --> 2
-
-* name / ssn / customer_id¶:
-These columns will be deleted at the end of the categorical feature handling process.
 
 ## Model Building
-Explain the machine learning algorithm(s) you used and any techniques for model selection or hyperparameter tuning.
+* As usually the case, transformed dataset divided by using train_test_split
+* Then, standard scaler implemented to numeric features only(I didn't implement standard scaler to categorical columns which transformed to encoded binary columns). `fit_transform` used for train set, `tranform` used for test set.
+* `models` and `params` dictioneries were created to be used in `GridSearchCV`
+* `GridSearchCV` has executed to find best model and it's paramaters.
+  
 
 ## Model Evaluation
-Detail how you evaluated the performance of your model(s). Include relevant metrics and discuss the results.
+* When F1 scorer used best model was RandomForestClassifier with {'max_depth': None, 'n_estimators': 128} 
+* F1 score was 0.8064 in `GridSearchCV` and 0.81 in the test set that was created in the beginning for evaluation.
+* ![image](https://github.com/doga-yilmaz/credit_score_predictions/assets/110274753/de2ddbd7-08cf-4072-a5a5-e4ee8835bffc)
 
-## Results and Insights
-Share the final evaluation metrics of your model. Interpret the results in terms of the problem you aimed to solve.
+
 
 ## Future Work
 Discuss potential improvements, enhancements, or additional analyses that could be explored in the future.
