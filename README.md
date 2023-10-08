@@ -85,12 +85,16 @@ The data that I used has 100.000 rows and 27 features including target feature.
 ## Model Evaluation
 * When F1 scorer used best model was RandomForestClassifier with {'max_depth': None, 'n_estimators': 128} 
 * F1 score was 0.8064 in `GridSearchCV` and 0.81 in the test set that was created in the beginning for evaluation.
-* ![image](https://github.com/doga-yilmaz/credit_score_predictions/assets/110274753/de2ddbd7-08cf-4072-a5a5-e4ee8835bffc)
+* Confusion matrix and classification report:
+  ![image](https://github.com/doga-yilmaz/credit_score_predictions/assets/110274753/de2ddbd7-08cf-4072-a5a5-e4ee8835bffc)
 
 
 
 ## Future Work
-Discuss potential improvements, enhancements, or additional analyses that could be explored in the future.
+* The dataset initially consisted of 27 columns, but as it grew to include more than 50 columns, the computational cost increased significantly. To address this challenge and improve computational efficiency, dimension reduction techniques like PCA, LLE, and t-SNE can be implemented, allowing us to reduce the dataset's dimensionality while preserving important information for analysis and modeling.
+* Additional machine learning algorithms and paramater settings can be explored with using `GridSearchCV`
+* Scaler implemented to only numeric columns, all columns can be transformed by same or different scalers.
+* NLP can be impelemented instead of encoding to columns like payment_behavior and type_of_loan. With doing this we can have less columns
 
 ## Contributions and License
 State whether you're open to contributions or feedback from others. Specify the license for your project.
