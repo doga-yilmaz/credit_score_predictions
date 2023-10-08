@@ -15,8 +15,7 @@ Briefly describe the purpose and goals of your machine learning project. Explain
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Data Preprocessing](#data-preprocessing)
 - [Model Building](#model-building)
-- [Model Evaluation](#model-evaluation)
-- [Results and Insights](#results-and-insights)
+- [Model Evaluation / Results and Insights](#model-evaluation)
 - [Future Work](#future-work)
 - [Contributions and License](#contributions-and-license)
 
@@ -98,6 +97,8 @@ The data that I used has 100.000 rows and 27 features including target feature.
 * NLP can be impelemented instead of encoding to columns like payment_behavior and type_of_loan. With doing this we can have less columns
 
 ## Contributions and License
-I am open to contributions. This project was my first one so feedbacks are appreciated, I am looking for your feedbacks to imporove myself.
+I am open to contributions. This project was my first experience, so I welcome and appreciate any feedback., I am waiting for your feedbacks to imporove myself.
 
 This project is licensed under the MIT License.
+
+Contact via LinkedIn: https://www.linkedin.com/in/doğa-yılmaz-779105247/
