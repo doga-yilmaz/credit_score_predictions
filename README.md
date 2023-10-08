@@ -29,7 +29,7 @@ Explain the organization of your repository, highlighting key directories and fi
 
 List the main libraries and packages used in your project. Consider providing installation instructions for dependencies.
 
-```bash
+```bash```
 pip install -r requirements.txt
 
 ## Getting Started
