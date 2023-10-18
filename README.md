@@ -9,6 +9,7 @@ Briefly describe the purpose and goals of your machine learning project. Explain
 
 ## Table of Contents
 
+The purpose of our machine learning project is to develop a credit score estimator. This estimator will use predictive modeling to assess an individual's creditworthiness, allowing financial institutions to make more accurate lending decisions.
 
 - [Dependencies](#dependencies)
 - [Data](#data)
